@@ -27,10 +27,10 @@ print(os.getcwd())
 user_name = "izumidk"
 password = "20440Project!"
 # Need to have output folders nested in directory
-download_directory = "../output"
-data_directory = "../data"
+download_directory = os.path.join(BASE_DIR,"output")
+data_directory = os.path.join(BASE_DIR,"data")
 
 # Download files
-# Download_file(user_name, password, path to study, download_directory)
+# download_file(user_name, password, path to study, download_directory)
 immport_download.download_file(user_name, password,
                                "/SDY640", download_directory)
